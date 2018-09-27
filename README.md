@@ -1,20 +1,20 @@
-## freeradius
+### freeradius
 
 Installs FreeRadius
 
-## Requirements
+### Requirements
 
 This role requires Ansible 1.9 or higher
 
-## Role Variables
+### Role Variables
 
 None
 
-## Dependencies
+### Dependencies
 
 None
 
-## Example Playbook
+### Example Playbook
 
 Install FreeRadius
 
@@ -22,10 +22,10 @@ Install FreeRadius
       roles:
         - example.freeradius  
 
-## License
+### License
 
 BSD
 
-## Author Information
+### Author Information
 
 Tommy Dunn
