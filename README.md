@@ -18,10 +18,10 @@ None
 
 Install FreeRadius
 
-- hosts: all
-  roles:
-    - example.freeradius
-    
+    - hosts: all
+      roles:
+        - example.freeradius  
+
 # License
 
 BSD
