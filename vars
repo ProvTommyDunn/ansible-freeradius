@@ -1,0 +1,82 @@
+---
+- name: Install freeradius
+  hosts: nps2.ad.provaws.org
+  become:true
+  remote_user: centos
+  tasks:
+  - name: install sssd
+    yum:
+      name: sssd
+      state: latest
+      
+  - name: install realmd
+    yum:
+      name: realmd
+      state: latest
+      
+  - name: install adcli
+    yum:
+      name: adcli
+      state: latest
+      
+  - name: install samba
+    yum:
+      name: samba
+      state: latest
+      
+  - name: install samba-common
+    yum:
+      name: samba-common
+      state: latest
+      
+  - name: install samba-winbind
+    yum:
+      name: samba-winbind
+      state: latest
+     
+  - name: install samba-winbind-clients
+    yum:
+      name: samba-winbind-clients
+      state: latest
+      
+  - name: install krb5-workstation
+    yum:
+      name: krb5-workstation
+      state: latest
+      
+  - name: install firewalld
+    yum:
+      name: firewalld
+      state: latest
+      
+  - name: install easy-rsa
+    yum:
+      name: easy-rsa
+      state: latest
+      
+  - name: install ntpdate
+    yum:
+      name: ntpdate
+      state: latest
+      
+  - name: install openldap-clients
+    yum:
+      name: openldap-clients
+      state: latest
+      
+  - name: install freeradius
+    yum:
+      name: easy-rsa
+      state: latest
+      
+  - name: install freeradius-utils
+    yum:
+      name: freeradius-utils
+      state: latest
+      
+  - name: install freeradius-ldap
+    yum:
+      name: freeradius-ldap
+      state: latest
+      
+      
