@@ -1,8 +1,8 @@
 ---
 - name: Install freeradius
   hosts: nps2.ad.provaws.org
-  become:true
   remote_user: centos
+  
   tasks:
   - name: install sssd
     yum:
