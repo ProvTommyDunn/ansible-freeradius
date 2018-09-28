@@ -1,1 +1,18 @@
+---
+# handlers file for freeradius
 
+- name: restart freeradius
+  become: yes
+  service:
+    name: radius
+    state: restarted
+  tags:
+    - freeradius
+
+- name: reload freeradius
+  become: yes
+  service:
+    name: radius
+    state: reloaded
+  tags:
+    - freeradius
